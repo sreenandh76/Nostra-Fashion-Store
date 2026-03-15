@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nostra Collections</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="collections-page">
+
+<!-- signup banner -->
+<div id="signup">
+<p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+<button id="close">X</button>
+</div>
+
+<!-- navbar -->
+
+<nav>
+
+<h1>NOSTRA</h1>
+
+<!-- hamburger icon -->
+<div class="menu-icon" onclick="openMenu()">☰</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#new-arrivals">New Arrival</a></li>
+<li><a href="index.html#most-wanted">Most Wanted</a></li>
+<li><a href="collections.html">Collections</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+
+
+<!-- mobile side menu -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+<span class="close-btn" onclick="closeMenu()">✕</span>
+
+<a href="index.html">Home</a>
+<a href="index.html#new-arrivals">New Arrival</a>
+<a href="index.html#most-wanted">Most Wanted</a>
+<a href="collections.html">Collections</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+<div class="collection-container">
+<div class="filters">
+<div class="search-container">
+
+<form class="navbar-search">
+
+<input 
+type="search" 
+id="searchInput" 
+name="search" 
+placeholder="Search"
+class="search-box"
+autocomplete="off"
+>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</form>
+
+</div>
+<h2>Occasion</h2>
+<label><input type="checkbox" class="occasion" value="summer"> Summer</label><br>
+<label><input type="checkbox" class="occasion" value="party"> Party</label><br>
+<label><input type="checkbox" class="occasion" value="beach"> Beach</label>
+
+<h2>Colors</h2>
+<label><input type="checkbox" class="color" value="red"> Red</label><br>
+<label><input type="checkbox" class="color" value="blue"> Blue</label><br>
+<label><input type="checkbox" class="color" value="white"> White</label><br>
+<label><input type="checkbox" class="color" value="green"> Green</label>
+
+<h2>Category</h2>
+<label><input type="checkbox" class="category" value="men"> Men</label><br>
+<label><input type="checkbox" class="category" value="women"> Women</label><br>
+<label><input type="checkbox" class="category" value="boys"> Boys</label><br>
+<label><input type="checkbox" class="category" value="girls"> Girls</label>
+
+<h2>Price</h2>
+<label><input type="checkbox" class="price" value="600"> Under ₹600</label><br>
+<label><input type="checkbox" class="price" value="900"> ₹700 - ₹900</label><br>
+<label><input type="checkbox" class="price" value="1300"> ₹1000 - ₹1300</label><br>
+<label><input type="checkbox" class="price" value="2000"> Above ₹1400</label>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<div class="collections-products">
+
+<div class="products">
+
+
+
+<div class="product" data-occasion="party" data-color="red" data-category="men" data-price="1499">
+<img src="redparmen.jpg">
+<h3>Men's Red Party Wear Shirt</h3>
+<p><span class="old-price">₹1899</span>₹1499</p>
+</div>
+<div class="product" data-occasion="party" data-color="blue" data-category="men" data-price="799">
+<img src="i5.jpg">
+<h3>Men's Blue Party Wear Shirt</h3>
+<p><span class="old-price">₹999</span>₹799</p>
+</div>
+<div class="product" data-occasion="party" data-color="red" data-category="boys" data-price="400">
+<img src="parkidred.jpg">
+<h3>Boys Red Party Wear <br> Shirt</h3>
+<p><span class="old-price">₹600</span>₹400</p>
+</div>
+<div class="product" data-occasion="party" data-color="blue" data-category="boys" data-price="600">
+<img src="boyshible.webp">
+<h3>Boys Blue Party Wear Shirt</h3>
+<p><span class="old-price">₹800</span>₹600</p>
+</div>
+<div class="product" data-occasion="party" data-color="red" data-category="women" data-price="1200">
+<img src="redparwomen.avif">
+<h3>Women's Red Party Wear Top</h3>
+<p><span class="old-price">₹1500</span>₹1200</p>
+</div>
+<div class="product" data-occasion="party" data-color="blue" data-category="women" data-price="1500">
+<img src="womenblu.jpg">
+<h3>Women's Blue Party Wear Top</h3>
+<p><span class="old-price">₹1899</span>₹1500</p>
+</div>
+<div class="product" data-occasion="summer" data-color="white" data-category="men" data-price="700">
+<img src="Men White Summer Shirt.webp">
+<h3>Men's White Summer Shirt</h3>
+<p><span class="old-price">₹600</span>₹700</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="red" data-category="men" data-price="750">
+<img src="Men Red Summer Shirt.jpg">
+<h3>Men's Red Summer <br>Shirt</h3>
+<p><span class="old-price">₹950</span>₹750</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="blue" data-category="men" data-price="690">
+<img src="Men Blue Summer Shirt.webp">
+<h3>Men's Blue Summer <br>Shirt</h3>
+<p><span class="old-price">₹950</span>₹850</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="green" data-category="men" data-price="800">
+<img src="sumg.jpg">
+<h3>Men's Green Summer Shirt</h3>
+<p><span class="old-price">₹1150</span>₹800</p>
+</div>
+<div class="product" data-occasion="summer" data-color="white" data-category="women" data-price="900">
+<img src="Women's White Summer Dress.jpg">
+<h3>Women's White Summer Dress</h3>
+<p><span class="old-price">₹1200</span>₹900</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="red" data-category="women" data-price="950">
+<img src="Women's Red Summer Dress.webp">
+<h3>Women's Red Summer Dress</h3>
+<p><span class="old-price">₹1300</span>₹950</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="blue" data-category="women" data-price="920">
+<img src="dress5.jpg">
+<h3>Women's Blue Summer Dress</h3>
+<p><span class="old-price">₹110</span>₹920</p>
+</div>
+<div class="product" data-occasion="summer" data-color="white" data-category="girls" data-price="400">
+<img src="Girls White Summer Dress.webp">
+<h3>Girls White Summer <br>Dress</h3>
+<p><span class="old-price">₹700</span>₹400</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="red" data-category="girls" data-price="420">
+<img src="Girls Red Summer Dress.webp">
+<h3>Girls Red Summer <br> Dress</h3>
+<p><span class="old-price">₹600</span>₹420</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="blue" data-category="girls" data-price="410">
+<img src="Girls blue Summer Dress.jpg">
+<h3>Girls Blue Summer <br>Dress</h3>
+<p><span class="old-price">₹750</span>₹410</p>
+</div>
+<div class="product" data-occasion="summer" data-color="white" data-category="boys" data-price="450">
+<img src="Boys White Summer Shirt.jpg">
+<h3>Boys White Summer <br> Shirt</h3>
+<p><span class="old-price">₹800</span>₹450</p>
+</div>
+<div class="product" data-occasion="party" data-color="white" data-category="girls" data-price="500">
+<img src="Girls White Party Dress.jpeg">
+<h3>Girls White Party <br> Dress</h3>
+<p><span class="old-price">₹850</span>₹500</p>
+</div>
+
+<div class="product" data-occasion="party" data-color="green" data-category="girls" data-price="550">
+<img src="Girls Green Party Dress.jpeg">
+<h3>Girls Green Party <br> Dress</h3>
+<p><span class="old-price">₹899</span>₹550</p>
+</div>
+<div class="product" data-occasion="summer" data-color="red" data-category="boys" data-price="470">
+<img src="Boys Red Summer Shirt.webp">
+<h3>Boys Red Summer <br>Shirt</h3>
+<p><span class="old-price">₹700</span>₹470</p>
+</div>
+<div class="product" data-occasion="party" data-color="white" data-category="women" data-price="1400">
+<img src="Women's White Party Dress.webp">
+<h3>Women's White Party Dress</h3>
+<p><span class="old-price">₹1899</span>₹1400</p>
+</div>
+<div class="product" data-occasion="party" data-color="white" data-category="boys" data-price="600">
+<img src="Boys White Party Wear Shirt.webp">
+<h3>Boys White Party Wear Shirt</h3>
+<p><span class="old-price">₹900</span>₹600</p>
+</div>
+
+<div class="product" data-occasion="party" data-color="green" data-category="boys" data-price="950">
+<img src="Boys Green Party Wear Shirt.jpg">
+<h3>Boys Green Party Wear Shirt</h3>
+<p><span class="old-price">₹1499</span>₹950</p>
+</div>
+<div class="product" data-occasion="party" data-color="green" data-category="women" data-price="1500">
+<img src="dress2.jpg">
+<h3>Women's Green Party Dress</h3>
+<p><span class="old-price">₹1900</span>₹1500</p>
+</div>
+<div class="product" data-occasion="summer" data-color="blue" data-category="boys" data-price="460">
+<img src="Boys Blue Summer Shirt.jpg">
+<h3>Boys Blue Summer <br>Shirt</h3>
+<p><span class="old-price">₹690</span>₹460</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="green" data-category="boys" data-price="480">
+<img src="Boys Green Summer Shirt.webp">
+<h3>Boys Green Summer <br>Shirt</h3>
+<p><span class="old-price">₹799</span>₹480</p>
+</div>
+<div class="product" data-occasion="party" data-color="white" data-category="men" data-price="1100">
+<img src="Men White Party Wear Shirt.avif">
+<h3>Men's White Party Wear Shirt</h3>
+<p><span class="old-price">₹1500</span>₹1100</p>
+</div>
+
+<div class="product" data-occasion="party" data-color="green" data-category="men" data-price="800">
+<img src="Men Green Party Wear Shirt.jpg">
+<h3>Men's Green Party Wear Shirt</h3>
+<p><span class="old-price">₹1150</span>₹800</p>
+</div>
+<div class="product" data-occasion="summer" data-color="green" data-category="girls" data-price="430">
+<img src="Girls Green Summer Dress.webp">
+<h3>Girls Green Summer Dress</h3>
+<p><span class="old-price">₹700</span>₹430</p>
+</div>
+
+<div class="product" data-occasion="summer" data-color="green" data-category="women" data-price="980">
+<img src="Women's Green Summer Dress.jpg">
+<h3>Women's Green Summer Dress</h3>
+<p><span class="old-price">₹1300</span>₹980</p>
+</div>
+<div class="product" data-occasion="party" data-color="red" data-category="girls" data-price="400">
+<img src="dress7.jpg">
+<h3>Girls Red Party <br>Wear </h3>
+<p><span class="old-price">₹799</span>₹400</p>
+</div>
+<div class="product" data-occasion="summer" data-color="green" data-category="boys" data-price="520">
+<img src="Boys Green Summer Shirt1.webp">
+<h3>Boys Green Summer <br>Shirt</h3>
+<p><span class="old-price">₹900</span>₹520</p>
+</div>
+<div class="product" data-occasion="party" data-color="blue" data-category="girls" data-price="800">
+<img src="girlspar.jpg">
+<h3>Girls Blue Party <br>Wear </h3>
+<p><span class="old-price">₹1200</span>₹800</p>
+</div>
+<div class="product" data-occasion="summer" data-color="blue" data-category="women" data-price="750">
+<img src="Women's Blue Summer Dress.webp">
+<h3>Women's Blue Summer Dress</h3>
+<p><span class="old-price">₹1150</span>₹750</p>
+</div>
+
+<div class="product" data-occasion="party" data-color="white" data-category="men" data-price="1500">
+<img src="men green Party Shirt.webp">
+<h3>Men's Green Party <br> Shirt</h3>
+<p><span class="old-price">₹1899</span>₹1500</p>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<script src="collections.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

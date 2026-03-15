@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nostra</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<!-- signup banner -->
+<div id="signup">
+<p>Sign Up and <b>GET 20% OFF</b> for your First Order</p>
+<button id="close">X</button>
+</div>
+
+<!-- navbar -->
+
+<nav>
+
+<h1>NOSTRA</h1>
+
+<!-- hamburger icon -->
+<div class="menu-icon" onclick="openMenu()">☰</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="#new-arrivals">New Arrival</a></li>
+<li><a href="#most-wanted">Most Wanted</a></li>
+<li><a href="collections.html">Collections</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+
+
+<!-- mobile side menu -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+<span class="close-btn" onclick="closeMenu()">✕</span>
+
+<a href="index.html">Home</a>
+<a href="#new-arrivals">New Arrival</a>
+<a href="#most-wanted">Most Wanted</a>
+<a href="collections.html">Collections</a>
+<a href="contact.html">Contact Us</a>
+
+</div>
+
+
+<!-- hero slider -->
+<section class="hero">
+
+<div class="slide-text">
+<h1>Discover Your Perfect Style</h1>
+<p>New Arrivals Collection</p>
+<button>Shop Now →</button>
+</div>
+
+<button class="arrow left" onclick="prevSlide()">❮</button>
+
+<div class="slider-container">
+<div class="slider">
+
+<div class="slide"><img src="slide1.jpg"></div>
+<div class="slide"><img src="slide2.jpg"></div>
+<div class="slide"><img src="slide3.png"></div>
+<div class="slide"><img src="slide4.jpg"></div>
+<div class="slide"><img src="slide5.jpg"></div>
+<div class="slide"><img src="slide6.jpg"></div>
+
+</div>
+</div>
+
+<button class="arrow right" onclick="nextSlide()">❯</button>
+
+</section>
+
+<!-- brands -->
+
+<div class="brands">
+  <h2>Brands</h2>
+
+  <div class="brand-list">
+
+    <div class="brand-item">
+      <i class="fa-brands fa-pied-piper"></i>
+      <p>Puma</p>
+    </div>
+
+    <div class="brand-item">
+      <i class="fa-brands fa-adn"></i>
+      <p>Adidas</p>
+    </div>
+
+    <div class="brand-item">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p>H&M</p>
+    </div>
+
+    <div class="brand-item">
+      <i class="fa-solid fa-gem"></i>
+      <p>Cartier</p>
+    </div>
+
+    <div class="brand-item">
+      <i class="fa-solid fa-shoe-prints"></i>
+      <p>Nike</p>
+    </div>
+
+    <div class="brand-item">
+      <i class="fa-solid fa-shirt"></i>
+      <p>Zara</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- customer experience -->
+
+<section class="features reveal">
+<div class="features-header">
+<h2>We Provide Best <br> Customer Experience</h2>
+<p> || we ensure that our customer have the best shopping experiences</p>
+</div>
+<div class="cards">
+
+<div class="card">
+  <i class="fa-solid fa-circle-check"></i>
+<h3>Original Products</h3>
+<p>Premium quality fashion collections <br>
+Made with the finest materials for lasting comfort</p>
+</div>
+
+<div class="card">
+  <i class="fa-solid fa-face-smile"></i>
+<h3>Satisfaction Guarantee</h3>
+<p>Shop with complete confidence <br>
+100% satisfaction guaranteed on every purchase</p>
+</div>
+
+<div class="card">
+  <i class="fa-solid fa-broom"></i>
+<h3>New Arrivals Everyday</h3>
+<p>Stay ahead with the latest fashion trends <br>
+New styles and collections added daily</p>
+</div>
+
+<div class="card">
+  <i class="fa-solid fa-truck"></i>
+<h3>Fast Delivery</h3>
+<p>Fast and reliable delivery service <br>
+Get your favorite styles delivered across India</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- new arrivals -->
+
+<section class="products" id="new-arrivals">
+
+<h2>New Arrivals</h2>
+
+<div class="product-list">
+
+<div class="product">
+<img src="shirt1.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a>  
+</div>
+
+<div class="product">
+<img src="shirt2.webp">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+
+<div class="product">
+<img src="shirt3jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+
+<div class="product">
+<img src="shirt4.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+
+
+<div class="product">
+<img src="dress2.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+
+<div class="product">
+<img src="dress3.jpeg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress4.jp.webp">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress5.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress6.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress7.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress8.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+<div class="product">
+<img src="dress9.jpg">
+<a href="collections.html" class="shop-btn">Shop Now →</a> 
+</div>
+</div>
+
+</section>
+
+
+<!-- most wanted -->
+
+<section class="most-wanted reveal" id="most-wanted">
+
+<h2>Most Wanted</h2>
+
+<button class="scroll-btn left-btn">❮</button>
+<button class="scroll-btn right-btn">❯</button>
+
+<div class="most-container" id="mostContainer">
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i1.jpeg">
+<span class="heart">♡</span>
+</div>
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i2.jpg">
+<span class="heart">♡</span>
+</div>
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i3.jpg">
+<span class="heart">♡</span>
+</div>
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i4.jpg">
+<span class="heart">♡</span>
+</div>
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i5.jpg">
+<span class="heart">♡</span>
+</div>
+
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i6.jpg">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i7.jpg">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="i8.jpg">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="kidf.webp">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="kidf2.jpg">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="kidm.jpg">
+<span class="heart">♡</span>
+</div>
+<div class="most-product">
+<span class="sale">sale</span>
+<img src="kidm2.webp">
+<span class="heart">♡</span>
+</div>
+</div>
+
+</section>
+
+
+<!-- limited offer -->
+
+<section class="offer reveal">
+
+<div class="offer-container">
+
+<div class="offer-image">
+<img src="fashion.jpg" alt="">
+</div>
+
+<div class="offer-text">
+<h2>Limited Offer</h2>
+<p>35% OFF on this for the First 30 Customers</p>
+<button>Shop Now →</button>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- newsletter -->
+
+<section class="newsletter reveal">
+
+<h2>Join our News Letter</h2>
+<p>Signup for our email newspaper to get exclusive discounts and updates</p>
+
+<input type="email" id="emailInput" placeholder="Enter your email"> <br>
+
+<button onclick="subscribe()">Subscribe →</button>
+
+<p id="subscribed-msg">Subscribed Successfully!</p>
+
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+
+<h2>NOSTRA</h2>
+<p>Premium fashion store for modern style lovers</p>
+<div class="footer-icons">
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-facebook"></i></div>
+<p>© 2026 nostra.com</p>
+</footer>
+<script src ="script.js"></script>
+
+</body>
+</html>
